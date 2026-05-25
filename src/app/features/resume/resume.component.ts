@@ -57,9 +57,8 @@ import { Component } from '@angular/core';
                 basics
               </p>
               <p>
-                AI-assisted development for code generation, refactoring,
-                documentation, architectural planning, and DevOps task
-                automation.
+                AI-assisted development for refactoring, documentation, and
+                DevOps task automation.
               </p>
             </div>
           </div>

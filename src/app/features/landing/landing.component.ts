@@ -32,11 +32,12 @@ import { RouterLink } from '@angular/router';
           </div>
 
           <p class="hero-text">
-            I build expressive, narrative‑infused digital experiences with clean
-            architecture, thoughtful design, and a touch of artistic flair. I
-            blend technical expertise with a passion for storytelling to create
-            engaging, user‑centered applications that resonate with audiences
-            and leave a lasting impression.
+            I design and craft digital experiences that fuse structure and
+            narrative identity with an intentional artistic edge. I'm driven by
+            curiosity and tenacity - the kind that keeps me refining until every
+            detail supports the whole. My work focuses on design clarity and
+            technical precision, creating interfaces that are expressive,
+            story‑driven, and genuinely enjoyable to use.
           </p>
         </div>
       </div>
