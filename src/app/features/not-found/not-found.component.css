@@ -98,17 +98,27 @@
   display: inline-block;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  font-family: var(--font-accent);
+
+  font-family: var(--font-hero);
   font-size: 1.25rem;
   text-decoration: none;
 
-  background: var(--accent-600);
+  background: var(--accent-500);
   color: var(--surface-200);
-  transition: background 0.3s ease;
+  border: 1px solid var(--accent-700);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+  transform: 0.25s ease;
 }
 
 .error-button:hover {
   background: var(--signal-green);
+  color: var(--primary-900);
+  box-shadow: 0 0 14px var(--signal-green);
+  transform: translateY(-1px);
 }
 
 /* RESPONSIVENESS */
