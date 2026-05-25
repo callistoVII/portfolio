@@ -45,13 +45,13 @@ body {
   --surface-300: #452f29;
 
   /* TEXTURES */
-  --pale-stone: url("https://nikinielsen.github.io/portfolio/assets/pale-stone-texture.png");
-  --stone: url("https://nikinielsen.github.io/portfolio/assets/stone-texture.png");
-  --parchment: url("https://nikinielsen.github.io/portfolio/assets/parchment-texture.png");
+  --pale-stone: url("https://callistoVII.github.io/portfolio/assets/pale-stone-texture.png");
+  --stone: url("https://callistoVII.github.io/portfolio/assets/stone-texture.png");
+  --parchment: url("https://callistoVII.github.io/portfolio/assets/parchment-texture.png");
 
   /* SUBMARKS */
-  --submark-light: url("https://nikinielsen.github.io/portfolio/assets/logo-submark-light.svg");
-  --submark-dark: url("https://nikinielsen.github.io/portfolio/assets/logo-submark-dark.svg");
+  --submark-light: url("https://callistoVII.github.io/portfolio/assets/logo-submark-light.svg");
+  --submark-dark: url("https://callistoVII.github.io/portfolio/assets/logo-submark-dark.svg");
 
   /* ------------------------------------------------------ */
   /* GLYPH LEGEND — BRAND SYMBOL SYSTEM                     */
@@ -230,7 +230,6 @@ body.dark {
 
   --submark-light: url("https://nikinielsen.github.io/portfolio/assets/logo-submark-dark.svg");
   --submark-dark: url("https://nikinielsen.github.io/portfolio/assets/logo-submark-dark.svg");
-
 }
 
 /* ------------------------------------------------------ */
