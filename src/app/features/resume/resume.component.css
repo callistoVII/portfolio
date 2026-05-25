@@ -68,7 +68,9 @@
   transform: translateY(-50%);
   width: 260px;
   height: 260px;
-  background-image: url("assets/logo-submark-light.svg");
+  background-image: var(
+    --submark-light
+  ); /* Submark light var rather than URL */
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.08;
@@ -76,7 +78,7 @@
 }
 
 :host-context(.dark) .resume__summary::after {
-  background-image: url("assets/logo-submark-dark.svg");
+  background-image: var(--submark-dark); /* Submark dark var rather than URL */
   opacity: 0.12;
   mix-blend-mode: screen;
 }
@@ -118,7 +120,7 @@
 .card {
   background:
     linear-gradient(rgba(250, 199, 181, 0.8), rgba(247, 131, 88, 0.65)),
-    url("assets/pale-stone-texture.png");
+    var(--pale-stone); /* Texture rather than URL */
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -143,7 +145,7 @@
 :host-context(.dark) .card {
   background:
     linear-gradient(rgba(122, 59, 36, 0.85), rgba(247, 130, 88, 0.6)),
-    url("assets/stone-texture.png");
+    var(--stone); /* Texture rather than URL */
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
