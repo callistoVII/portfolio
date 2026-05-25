@@ -11,7 +11,7 @@
 
   background:
     linear-gradient(rgba(255, 240, 234, 0.9), rgba(255, 173, 144, 0.623)),
-    url("../../../assets/pale-stone-texture.png");
+    url("assets/pale-stone-texture.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -29,7 +29,7 @@
 body.dark .hero-card {
   background:
     linear-gradient(rgba(141, 0, 0, 0.719), rgba(41, 12, 1, 0.904)),
-    url("../../../assets/stone-texture.png");
+    url("assets/stone-texture.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;

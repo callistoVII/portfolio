@@ -30,7 +30,7 @@
 
   background:
     linear-gradient(rgba(255, 210, 191, 0.918), rgba(68, 16, 5, 0.884)),
-    url("../../../assets/pale-stone-texture.png");
+    url("assets/pale-stone-texture.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
