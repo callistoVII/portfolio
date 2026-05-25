@@ -47,7 +47,7 @@
 }
 
 :host-context(.dark) .resume-header h1::after {
-  color: var(--accent-300);
+  color: var(--signal-green);
 }
 /* =========================================================
    SUMMARY CARD (STACKED ABOVE EVERYTHING)
@@ -84,7 +84,7 @@
 }
 
 .resume__summary p {
-  font-family: var(--font-body);
+  font-family: var(--font-display);
   font-size: 1.25rem;
   line-height: 1.75;
   letter-spacing: 0.4px;
@@ -93,7 +93,7 @@
 }
 
 .resume__summary p::first-letter {
-  font-family: var(--font-body);
+  font-family: var(--font-accent);
   font-size: 3.2rem;
   float: left;
   line-height: 0.85;
