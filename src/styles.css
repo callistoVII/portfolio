@@ -45,9 +45,9 @@ body {
   --surface-300: #452f29;
 
   /* Textures */
-  --parchment-texture: url("../../assets/parchment-texture.png");
-  --stone-texture: url("../../assets/stone-texture.png");
-  --pale-stone-texture: url("../../assets/pale-stone-texture.png");
+  --parchment-texture: url("./assets/parchment-texture.png");
+  --stone-texture: url("./assets/stone-texture.png");
+  --pale-stone-texture: url("./assets/pale-stone-texture.png");
 
   /* ------------------------------------------------------ */
   /* GLYPH LEGEND — BRAND SYMBOL SYSTEM                     */
@@ -285,5 +285,5 @@ body.dark .footer-nav li + li::before {
 }
 
 body.dark .hero-logo-link img {
-  content: url("../../assets/logo-dark.png") !important;
+  content: url("./assets/logo-dark.png") !important;
 }
