@@ -95,7 +95,7 @@
 }
 
 :host-context(.dark) .about__body-card::before {
-  background-image: url("../..assets/logo-submark-dark.svg");
+  background-image: url("../../assets/logo-submark-dark.svg");
   opacity: 0.18;
 }
 
