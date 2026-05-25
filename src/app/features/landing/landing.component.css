@@ -169,10 +169,10 @@ body.dark .hero-subtitle {
 /* --------------------------------------------------------------- */
 
 .hero-text {
-  font-family: var(--font-body);
+  font-family: var(--font-mono);
   font-size: var(--font-size-md);
-  font-weight: 400;
   line-height: 1.55;
+  letter-spacing: 0.003em;
   color: var(--primary-900);
   margin-bottom: 2rem;
   text-align: justify;

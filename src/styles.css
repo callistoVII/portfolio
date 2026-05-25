@@ -1,7 +1,7 @@
 /* ------------------------------------------------------ */
 /* GOOGLE FONT IMPORTS                                    */
 /* ------------------------------------------------------ */
-@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Cutive+Mono&family=IM+Fell+DW+Pica:ital@0;1&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amarante&family=Cutive+Mono&family=IM+Fell+DW+Pica:ital@0;1&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&family=Staatliches&display=swap");
 
 /* ------------------------------------------------------ */
 /* GLOBAL RESET                                           */
@@ -34,7 +34,7 @@ body {
   /* Accents */
   --accent-700: #f78358;
   --accent-500: #00ff88;
-  --accent-300: #007239;
+  --accent-300: #974229;
   --accent-100: #ffe3d3;
 
   /* Mode‑independent signal color */
@@ -70,6 +70,7 @@ body {
   --font-accent: "Amarante", serif;
   --font-body: "Cutive Mono", monospace;
   --font-hero: "Staatliches", sans-serif;
+  --font-mono: "Sometype Mono", monospace;
 
   /* Type scale */
   --font-size-xs: 0.75rem;
