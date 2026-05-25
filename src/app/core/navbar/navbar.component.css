@@ -262,7 +262,7 @@
 
     background:
       linear-gradient(rgba(255, 240, 234, 0.98), rgba(255, 230, 220, 0.98)),
-      url("/assets/pale-stone-texture.png");
+      url("../../../assets/pale-stone-texture.png");
     background-size: cover;
     background-blend-mode: soft-light;
 
@@ -280,7 +280,7 @@
   :host-context(body.dark) .nav-links {
     background:
       linear-gradient(rgba(24, 6, 0, 0.96), rgba(27, 20, 17, 0.96)),
-      url("/assets/stone-texture.png");
+      url("../../../assets/stone-texture.png");
     background-size: cover;
     background-blend-mode: overlay;
 

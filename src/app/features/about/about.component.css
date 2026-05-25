@@ -63,7 +63,7 @@
 
   background:
     linear-gradient(rgba(255, 240, 234, 0.9), rgba(255, 173, 144, 0.623)),
-    url("../../assets/pale-stone-texture.png");
+    url("../../../assets/pale-stone-texture.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -83,7 +83,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/logo-submark-light.svg");
+  background-image: url("../../../assets/logo-submark-light.svg");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,7 +95,7 @@
 }
 
 :host-context(.dark) .about__body-card::before {
-  background-image: url("../../assets/logo-submark-dark.svg");
+  background-image: url("../../../assets/logo-submark-dark.svg");
   opacity: 0.18;
 }
 
@@ -131,7 +131,7 @@
   height: 660px;
   opacity: 0.1;
   filter: blur(0.5px);
-  background-image: url("../../assets/logo-submark-light.svg");
+  background-image: url("../../../assets/logo-submark-light.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -140,7 +140,7 @@
 }
 
 :host-context(.dark) .about__submark {
-  background-image: url("../../assets/logo-submark-dark.svg");
+  background-image: url("../../../assets/logo-submark-dark.svg");
   opacity: 0.3;
 }
 
@@ -148,7 +148,7 @@
 :host-context(.dark) .about__body-card {
   background:
     linear-gradient(rgba(141, 0, 0, 0.719), rgba(41, 12, 1, 0.904)),
-    url("../../assets/stone-texture.png");
+    url("../../../assets/stone-texture.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;

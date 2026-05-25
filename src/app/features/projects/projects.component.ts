@@ -22,7 +22,10 @@ import { CommonModule } from '@angular/common';
 
           <div #interactiveTrack class="carousel__track">
             <div class="carousel__item" (click)="openModal(0)">
-              <img src="../../assets/logo-evolution.png" alt="evolution logo" />
+              <img
+                src="../../../assets/logo-evolution.png"
+                alt="evolution logo"
+              />
               <span class="expand-icon">⤢</span>
               <span class="carousel__caption"
                 >Design Evolution of my Logo, final stages.</span
@@ -31,7 +34,7 @@ import { CommonModule } from '@angular/common';
 
             <div class="carousel__item" (click)="openModal(1)">
               <img
-                src="../../assets/vector-husky-plane.png"
+                src="../../../assets/vector-husky-plane.png"
                 alt="Vector Model - Husky Prop Plane"
               />
               <span class="expand-icon">⤢</span>
@@ -42,7 +45,7 @@ import { CommonModule } from '@angular/common';
 
             <div class="carousel__item" (click)="openModal(2)">
               <img
-                src="../../assets/rpg-legend.png"
+                src="../../../assets/rpg-legend.png"
                 alt="RPG Character Builder Hero"
               />
               <span class="expand-icon">⤢</span>
@@ -51,7 +54,7 @@ import { CommonModule } from '@angular/common';
 
             <div class="carousel__item" (click)="openModal(3)">
               <img
-                src="../../assets/rpg-choices.png"
+                src="../../../assets/rpg-choices.png"
                 alt="RPG Builder Choice Cards"
               />
               <span class="expand-icon">⤢</span>
@@ -60,7 +63,7 @@ import { CommonModule } from '@angular/common';
 
             <div class="carousel__item" (click)="openModal(4)">
               <img
-                src="../../assets/hr-knowledge-quote.png"
+                src="../../../assets/hr-knowledge-quote.png"
                 alt="typography quote by Henry Rollins"
               />
               <span class="expand-icon">⤢</span>
@@ -69,7 +72,7 @@ import { CommonModule } from '@angular/common';
 
             <div class="carousel__item" (click)="openModal(5)">
               <img
-                src="../../assets/painted-still-life.png"
+                src="../../../assets/painted-still-life.png"
                 alt="still life painting - acrylic"
               />
               <span class="expand-icon">⤢</span>
@@ -106,7 +109,7 @@ import { CommonModule } from '@angular/common';
           <div #futureTrack class="carousel__track">
             <div class="carousel__item" (click)="openFutureModal(0)">
               <img
-                src="../../assets/future-commission.png"
+                src="../../../assets/future-commission.png"
                 alt="Future Project"
               />
               <span class="expand-icon">⤢</span>
@@ -117,7 +120,10 @@ import { CommonModule } from '@angular/common';
             </div>
 
             <div class="carousel__item" (click)="openFutureModal(1)">
-              <img src="../../assets/geode-future.png" alt="Future Project" />
+              <img
+                src="../../../assets/geode-future.png"
+                alt="Future Project"
+              />
               <span class="expand-icon">⤢</span>
               <span class="carousel__caption">
                 "I don't know where I am going from here, but I promise it won't
@@ -180,12 +186,12 @@ export class ProjectsComponent implements AfterViewInit {
   currentIndex = 0;
 
   modalImages = [
-    '../../assets/logo-evolution.png',
-    '../../assets/vector-husky-plane.png',
-    '../../assets/rpg-legend.png',
-    '../../assets/rpg-choices.png',
-    '../../assets/hr-knowledge-quote.png',
-    '../../assets/painted-still-life.png',
+    '../../../assets/logo-evolution.png',
+    '../../../assets/vector-husky-plane.png',
+    '../../../assets/rpg-legend.png',
+    '../../../assets/rpg-choices.png',
+    '../../../assets/hr-knowledge-quote.png',
+    '../../../assets/painted-still-life.png',
   ];
 
   /* FUTURE MODAL */
@@ -193,8 +199,8 @@ export class ProjectsComponent implements AfterViewInit {
   futureIndex = 0;
 
   futureImages = [
-    '../../assets/future-commission.png',
-    '../../assets/geode-future.png',
+    '../../../assets/future-commission.png',
+    '../../../assets/geode-future.png',
   ];
 
   touchStartX = 0;
