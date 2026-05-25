@@ -115,9 +115,9 @@
 }
 
 .error-button:hover {
-  background: var(--accent-300);
+  background: var(--signal-green);
   color: var(--back-to-safety);
-  box-shadow: 0 0 14px var(--accent-300);
+  box-shadow: 0 0 14px var(--signal-green);
   transform: translateY(-1px);
 }
 
