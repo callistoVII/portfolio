@@ -68,7 +68,7 @@
   transform: translateY(-50%);
   width: 260px;
   height: 260px;
-  background-image: url("../../../assets/logo-submark-light.svg"); /* adjust path */
+  background-image: url("../../../assets/logo-submark-light.svg");
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.08;
