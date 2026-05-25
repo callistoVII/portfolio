@@ -32,7 +32,7 @@
   font-size: 2rem;
   margin: 0.75rem auto 0;
   opacity: 0.6;
-  color: var(--signal-green);
+  color: var(--accent-300);
 }
 
 :host-context(.dark) .projects-header h1 {
@@ -233,7 +233,7 @@
 .carousel__dots .dot.active {
   opacity: 1;
   transform: scale(1.25);
-  color: var(--accent-700);
+  color: var(--accent-300);
 }
 
 /* Dark mode dots */
