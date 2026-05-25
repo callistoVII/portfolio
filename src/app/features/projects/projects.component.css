@@ -32,7 +32,7 @@
   font-size: 2rem;
   margin: 0.75rem auto 0;
   opacity: 0.6;
-  color: var(--accent-700);
+  color: var(--signal-green);
 }
 
 :host-context(.dark) .projects-header h1 {
@@ -74,7 +74,7 @@
 :host-context(.dark) .card {
   background:
     linear-gradient(rgba(122, 59, 36, 0.85), rgba(247, 130, 88, 0.6)),
-    var(---stone); /* Texture rather than URL */
+    var(--stone); /* Texture rather than URL */
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -127,12 +127,12 @@
 
 .carousel__item:hover .carousel__caption {
   opacity: 1;
-  color: var(--signal-green);
+  color: var(--accent-700);
 }
 
 /* Dark mode caption color */
 :host-context(.dark) .carousel__caption {
-  color: var(--accent-700);
+  color: var(--signal-green);
 }
 
 .carousel--interactive {
@@ -233,7 +233,7 @@
 .carousel__dots .dot.active {
   opacity: 1;
   transform: scale(1.25);
-  color: var(--primary-600);
+  color: var(--accent-700);
 }
 
 /* Dark mode dots */
@@ -243,7 +243,7 @@
 }
 
 :host-context(.dark) .carousel__dots .dot.active {
-  color: var(--accent-300);
+  color: var(--signal-green);
   opacity: 1;
 }
 
