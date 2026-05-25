@@ -227,6 +227,9 @@ body.dark {
   --accent-300: #00ff88;
   --accent-100: #8a6a4a;
 
+  --abort-mission: #eb7155;
+  --back-to-safety: #240303;
+
   --pale-stone: url("https://callistoVII.github.io/portfolio/assets/pale-stone-texture.png");
   --stone: url("https://callistoVII.github.io/portfolio/assets/stone-texture.png");
   --parchment: url("https://callistoVII.github.io/portfolio/assets/parchment-texture.png");
