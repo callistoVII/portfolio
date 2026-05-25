@@ -49,7 +49,7 @@
 .card {
   background:
     linear-gradient(rgba(250, 199, 181, 0.8), rgba(247, 131, 88, 0.65)),
-    url("/assets/pale-stone-texture.png");
+    url("../../assets/pale-stone-texture.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
@@ -74,7 +74,7 @@
 :host-context(.dark) .card {
   background:
     linear-gradient(rgba(122, 59, 36, 0.85), rgba(247, 130, 88, 0.6)),
-    url("/assets/stone-texture.png");
+    url("../../assets/stone-texture.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: multiply;

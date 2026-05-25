@@ -11,11 +11,11 @@ import { RouterLink } from '@angular/router';
         <a routerLink="/projects" class="hero-logo-link">
           <picture>
             <source
-              srcset="assets/logo-light.png"
+              srcset="../../assets/logo-light.png"
               media="(prefers-color-scheme: dark)"
             />
             <img
-              src="assets/logo-light.png"
+              src="../../assets/logo-light.png"
               alt="NIKI NIELSEN Logo"
               class="hero-logo-img"
             />
@@ -27,9 +27,7 @@ import { RouterLink } from '@angular/router';
         <div class="hero-content">
           <div class="hero-accent-wrap">
             <span class="hero-accent-top">🜁</span>
-            <h2 class="hero-subtitle">
-              Art & Architecture
-            </h2>
+            <h2 class="hero-subtitle">Art & Architecture</h2>
             <span class="hero-accent-bottom">🜃</span>
           </div>
 

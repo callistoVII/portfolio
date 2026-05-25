@@ -8,14 +8,14 @@ import { Component } from '@angular/core';
     <section class="error-404">
       <div class="error-wrapper">
         <img
-          src="assets/error-404.png"
+          src="../../assets/error-404.png"
           alt=""
           class="error-ghost"
           aria-hidden="true"
         />
 
         <img
-          src="assets/lost-astronaut.png"
+          src="../../assets/lost-astronaut.png"
           alt="Lost astronaut drifting in space"
           class="error-astronaut"
         />
