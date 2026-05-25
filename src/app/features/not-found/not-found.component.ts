@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-not-found',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   template: `
     <section class="error-404">
       <div class="error-wrapper">
