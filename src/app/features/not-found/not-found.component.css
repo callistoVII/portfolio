@@ -1,0 +1,135 @@
+/* ------------------------------------------------------ */
+/* ERROR 404  -  MAJOR TOM TO GROUND CONTROL              */
+/* ------------------------------------------------------ */
+
+.error-404 {
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background: radial-gradient(circle at top, #030000 0, #030101 40%, #000 100%);
+}
+
+.error-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6rem 2rem;
+}
+
+/* Error Card */
+.error-card {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  border-radius: 25px;
+
+  background:
+    linear-gradient(rgba(255, 210, 191, 0.918), rgba(68, 16, 5, 0.884)),
+    url("/assets/pale-stone-texture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+
+  box-shadow:
+    0 12px 20px rgba(255, 108, 50, 0.63),
+    0 0 0 1px rgba(100, 3, 3, 0.212) inset;
+}
+
+/* Card text — theme locked */
+.error-card .error-title,
+.error-card .error-text {
+  color: var(--surface-300);
+}
+
+.lost-glyph {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.75rem;
+  color: var(--signal-green);
+}
+
+/* Illustration - 404 */
+.error-ghost {
+  position: absolute;
+  left: -130px;
+  top: -80px;
+  width: 350px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.error-astronaut {
+  position: absolute;
+  right: -350px;
+  bottom: -50px;
+  width: 450px;
+  max-width: 45vw;
+  transform: rotate(10deg);
+  pointer-events: none;
+}
+
+/* Title */
+.error-title {
+  font-family: var(--font-accent);
+  font-size: var(--font-size-xl);
+  margin-bottom: 0.5rem;
+}
+
+/* Body Text */
+.error-text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  line-height: 1.55;
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.error-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-family: var(--font-accent);
+  font-size: 1.25rem;
+  text-decoration: none;
+
+  background: var(--accent-600);
+  color: var(--surface-50);
+  transition: background 0.3s ease;
+}
+
+.error-button:hover {
+  background: var(--signal-green);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 900px) {
+  .error-ghost {
+    left: -40px;
+    top: -40px;
+    width: 180px;
+  }
+
+  .error-astronaut {
+    right: -40px;
+    top: 40px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .error-ghost,
+  .error-astronaut {
+    display: none;
+  }
+
+  .error-wrapper {
+    padding: 3rem 1.5rem;
+  }
+}

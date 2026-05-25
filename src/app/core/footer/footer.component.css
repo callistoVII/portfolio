@@ -1,0 +1,159 @@
+/* ---------------------------------------------------------------- */
+/* FOOTER CONTAINER - Separate from Global to avoid Style Conflicts */
+/* ---------------------------------------------------------------- */
+
+.footer {
+  background: linear-gradient(
+    rgba(255, 250, 249, 0.8),
+    rgba(255, 209, 185, 0.65)
+  );
+  border-top: 1px solid var(--accent-700);
+  padding: 1.75rem 1rem 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top vignette fade */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+}
+
+/* ------------------------------------------------------ */
+/* FOOTER NAVIGATION — DESKTOP                            */
+/* ------------------------------------------------------ */
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+
+/* Reset nav wrapper spacing */
+.footer nav {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset list item spacing + prep for centered divider */
+.footer-nav li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Centered ✦ divider */
+.footer-nav li::after {
+  content: "✦";
+  color: var(--accent-700);
+  margin-left: 2.2rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Remove divider after last item */
+.footer-nav li:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+/* Ember underline hover */
+.footer-nav a {
+  color: var(--primary-900);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.footer-nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: var(--accent-700);
+  box-shadow: 0 0 6px var(--ember-glow);
+  transform: translateX(-50%);
+  transition: width 0.25s ease;
+}
+
+.footer-nav a:hover::after,
+.footer-nav a:focus-visible::after {
+  width: 60%;
+}
+
+/* Hover color */
+.footer-nav a:hover,
+.footer-nav a:focus-visible {
+  color: var(--accent-300);
+}
+
+/* Dark mode glow for divider */
+:host-context(body.dark) .footer-nav li::after {
+  text-shadow: 0 0 6px var(--ember-glow);
+}
+
+/* ------------------------------------------------------ */
+/* COPYRIGHT TEXT                                          */
+/* ------------------------------------------------------ */
+
+.footer .copyright {
+  color: var(--primary-600);
+  font-size: 0.9rem;
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+.footer .footer-accent {
+  color: var(--accent-700);
+  margin: 0 0.25rem;
+}
+
+/* ------------------------------------------------------ */
+/* RESPONSIVE FOOTER — MOBILE                              */
+/* ------------------------------------------------------ */
+
+@media (max-width: 800px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    text-align: center;
+  }
+
+  :host .footer-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  :host .footer-nav li::after {
+    content: "";
+    margin: 0;
+  }
+
+  :host .footer-nav a {
+    font-size: 1.1rem;
+  }
+
+  .footer .copyright {
+    margin-top: 1.75rem;
+    font-size: 0.95rem;
+  }
+}

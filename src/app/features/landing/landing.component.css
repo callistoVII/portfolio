@@ -1,0 +1,188 @@
+/* --------------------------------------------------------------- */
+/* HERO CARD (Light Mode)                                          */
+/* --------------------------------------------------------------- */
+
+.hero-card {
+  position: relative;
+  padding: 4rem 3rem;
+  border-radius: 25px;
+  max-width: 1200px;
+  margin: 2rem auto 3rem auto;
+
+  background:
+    linear-gradient(rgba(255, 240, 234, 0.9), rgba(255, 173, 144, 0.623)),
+    url("/assets/pale-stone-texture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+
+  filter: brightness(1.02) contrast(0.96);
+
+  box-shadow:
+    0 8px 18px rgba(7, 102, 63, 0.356),
+    0 0 0 1px rgba(255, 255, 255, 0.541) inset;
+}
+
+/* --------------------------------------------------------------- */
+/* HERO CARD (Dark Mode)                                           */
+/* --------------------------------------------------------------- */
+body.dark .hero-card {
+  background:
+    linear-gradient(rgba(141, 0, 0, 0.719), rgba(41, 12, 1, 0.904)),
+    url("/assets/stone-texture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  box-shadow:
+    0 6px 16px rgba(255, 108, 50, 0.63),
+    0 0 0 1px rgba(100, 3, 3, 0.212) inset;
+}
+
+/* --------------------------------------------------------------- */
+/* HERO LAYOUT                                                     */
+/* --------------------------------------------------------------- */
+
+.hero-card.hero-split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 5rem 2rem;
+}
+
+.hero-content {
+  max-width: 520px;
+}
+
+/* --------------------------------------------------------------- */
+/* LOGO + CTA                                                      */
+/* --------------------------------------------------------------- */
+
+.hero-logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.hero-logo-link img {
+  width: 520px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.hero-logo-link:hover img {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.hero-logo-cta {
+  margin-top: 0.75rem;
+  font-family: var(--font-accent);
+  font-size: 1.5rem;
+  color: var(--signal-green);
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease,
+    color 0.35s ease;
+  pointer-events: none;
+}
+
+.hero-logo-link:hover .hero-logo-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark mode CTA */
+body.dark .hero-logo-cta {
+  color: var(--signal-green);
+}
+
+/* --------------------------------------------------------------- */
+/* ACCENT GLYPHS                                                   */
+/* --------------------------------------------------------------- */
+
+.hero-accent-wrap {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-accent-top,
+.hero-accent-bottom {
+  display: block;
+  font-size: 1.25rem;
+  color: var(--accent-700);
+}
+
+.hero-accent-bottom {
+  margin-top: 0.5rem;
+}
+
+/* Dark mode glyphs — placed AFTER base rule so no !important needed */
+body.dark .hero-accent-top,
+body.dark .hero-accent-bottom {
+  color: var(--signal-green);
+}
+
+/* --------------------------------------------------------------- */
+/* SUBTITLE                                                        */
+/* --------------------------------------------------------------- */
+
+.hero-subtitle {
+  font-family: var(--font-accent);
+  font-size: var(--font-size-2xl);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--primary-900);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Dark mode subtitle */
+body.dark .hero-subtitle {
+  color: var(--accent-100);
+}
+
+/* --------------------------------------------------------------- */
+/* BODY TEXT                                                       */
+/* --------------------------------------------------------------- */
+
+.hero-text {
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--primary-900);
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* Dark mode body text */
+body.dark .hero-text {
+  color: var(--primary-200);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+/* --------------------------------------------------------------- */
+/* RESPONSIVE                                                      */
+/* --------------------------------------------------------------- */
+
+@media (max-width: 800px) {
+  .hero-card.hero-split {
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}

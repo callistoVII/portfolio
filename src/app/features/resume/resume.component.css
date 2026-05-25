@@ -1,0 +1,300 @@
+/* =========================================================
+   RESUME PAGE — GLOBAL WRAPPER
+========================================================= */
+
+.resume-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resume-header h1 {
+  font-family: var(--font-accent);
+  font-size: 3.2rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--primary-900);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.resume-header h1::after {
+  content: "✶";
+  display: block;
+  font-size: 2rem;
+  margin: 0.75rem auto 0;
+  opacity: 0.6;
+  color: var(--accent-700);
+}
+
+:host-context(.dark) .resume-header h1 {
+  color: var(--primary-900);
+}
+
+:host-context(.dark) .resume-header h1::after {
+  color: var(--accent-300);
+}
+/* =========================================================
+   SUMMARY CARD (STACKED ABOVE EVERYTHING)
+========================================================= */
+
+.resume__summary {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  color: var(--primary-900);
+}
+
+.resume__summary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  width: 260px;
+  height: 260px;
+  background-image: url("/assets/logo-submark-light.svg"); /* adjust path */
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+:host-context(.dark) .resume__summary::after {
+  background-image: url("/assets/logo-submark-dark.svg");
+  opacity: 0.12;
+  mix-blend-mode: screen;
+}
+
+.resume__summary p {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1.75;
+  letter-spacing: 0.4px;
+  color: var(--primary-900);
+  max-width: 75ch;
+}
+
+.resume__summary p::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  float: left;
+  line-height: 0.85;
+  padding-right: 0.4rem;
+  padding-top: 0.15rem;
+  margin-bottom: -0.1rem;
+  color: var(--primary-900);
+}
+
+/* =========================================================
+   STACKED CARD LAYOUT
+========================================================= */
+
+.resume--stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* =========================================================
+   CARD BASE STYLE
+========================================================= */
+
+.card {
+  background:
+    linear-gradient(rgba(250, 199, 181, 0.8), rgba(247, 131, 88, 0.65)),
+    url("/assets/pale-stone-texture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  border: 1px solid var(--accent-100);
+  padding: 2rem 2.25rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-700);
+}
+
+/* Dark mode */
+:host-context(.dark) .card {
+  background:
+    linear-gradient(rgba(122, 59, 36, 0.85), rgba(247, 130, 88, 0.6)),
+    url("/assets/stone-texture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  border: 1px solid var(--accent-100);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+:host-context(.dark) .card:hover {
+  border-color: var(--accent-500);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================================================
+   CARD HEADERS
+========================================================= */
+
+.card > h2 {
+  font-family: var(--font-accent);
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--surface-200);
+  color: var(--primary-600);
+}
+
+:host-context(.dark) .card > h2 {
+  border-bottom: 1px solid var(--accent-300);
+  color: var(--accent-700);
+}
+
+/* =========================================================
+   CONTENT INSIDE CARDS
+========================================================= */
+
+.resume__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 1.7;
+  color: var(--primary-900);
+}
+
+:host-context(.dark) .resume__content {
+  color: var(--primary-900);
+}
+
+.resume__group h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: var(--primary-600);
+}
+
+:host-context(.dark) .resume__group h3 {
+  color: var(--primary-700);
+}
+
+.resume__group p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--primary-900);
+}
+
+:host-context(.dark) .resume__group p {
+  color: var(--primary-900);
+}
+
+/* =========================================================
+   EXPERIENCE + EDUCATION
+========================================================= */
+
+.resume__experience,
+.resume__education {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.resume__experience h3,
+.resume__education h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--primary-600);
+}
+
+:host-context(.dark) .resume__experience h3,
+:host-context(.dark) .resume__education h3 {
+  color: var(--primary-700);
+}
+
+.resume__meta {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
+
+.resume__experience ul {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.resume__experience li {
+  list-style: disc;
+}
+
+/* =========================================================
+   DOWNLOAD SECTION
+========================================================= */
+
+.resume__download {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.resume__download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.85rem 1.75rem;
+  background: var(--accent-700);
+  color: var(--primary-1100, #fff);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.resume__download-button:hover {
+  background: var(--accent-500);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+:host-context(.dark) .resume__download-button {
+  background: var(--accent-500);
+  color: var(--primary-900);
+}
+
+:host-context(.dark) .resume__download-button:hover {
+  background: var(--accent-300);
+  color: var(--surface-300);
+}

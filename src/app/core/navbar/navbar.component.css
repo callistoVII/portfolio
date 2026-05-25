@@ -1,0 +1,321 @@
+/* ------------------------------------------------------ */
+/* NAVBAR — DESKTOP                                       */
+/* ------------------------------------------------------ */
+
+.navbar {
+  background: linear-gradient(
+    rgba(255, 209, 185, 0.45),
+    rgba(255, 250, 249, 0.8)
+  );
+  border-bottom: 3px solid var(--accent-700);
+  padding: 1rem 0;
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    0 2px 4px rgba(69, 47, 41, 0.25),
+    0 6px 12px rgba(69, 47, 41, 0.15);
+}
+
+/* Soft vignette */
+.navbar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.06), transparent);
+}
+
+.nav-hamburger {
+  display: none;
+}
+
+/* ------------------------------------------------------ */
+/* NAVIGATION LINKS — DESKTOP                             */
+/* ------------------------------------------------------ */
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.nav-links a {
+  position: relative;
+  padding: 0.5rem 0;
+  color: var(--primary-900);
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Glyphs */
+.nav-links a::before,
+.nav-links a::after {
+  content: "✧";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  opacity: 0;
+  color: var(--accent-700);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  text-shadow:
+    0 0 6px rgba(255, 145, 0, 0.45),
+    0 0 12px rgba(255, 145, 0, 0.45);
+}
+
+.nav-links a::before {
+  left: -1.5rem;
+  rotate: -8deg;
+}
+
+.nav-links a::after {
+  right: -1.5rem;
+  rotate: 8deg;
+}
+
+/* Hover + Focus */
+.nav-links a:hover,
+.nav-links a:focus-visible {
+  color: var(--accent-700);
+}
+
+.nav-links a:hover::before,
+.nav-links a:hover::after,
+.nav-links a:focus-visible::before,
+.nav-links a:focus-visible::after {
+  opacity: 1;
+  transform: translateY(-50%) scale(1);
+}
+
+/* Active Link */
+.nav-links a.active {
+  color: var(--accent-700);
+  text-shadow: 0 0 6px rgba(255, 145, 0, 0.35);
+}
+
+/* ------------------------------------------------------ */
+/* THEME TOGGLE — DESKTOP                                 */
+/* ------------------------------------------------------ */
+
+.theme-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+  color: var(--primary-900);
+}
+
+.theme-icon {
+  font-size: 1.2rem;
+  color: var(--accent-700);
+  transition:
+    color 0.35s ease,
+    transform 0.35s ease,
+    text-shadow 0.35s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+  color: var(--accent-500);
+  transform: scale(1.5);
+  text-shadow:
+    0 0 6px rgba(175, 104, 11, 0.45),
+    0 0 12px rgba(175, 104, 11, 0.25),
+    0 0 18px rgba(175, 104, 11, 0.15);
+}
+
+.theme-label {
+  opacity: 0;
+  transform: translateX(6px);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  transition:
+    opacity 0.4s ease,
+    transform 0.5s ease;
+}
+
+.theme-toggle:hover .theme-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Dark mode icon color */
+:host-context(body.dark) .theme-icon {
+  color: var(--accent-700);
+}
+
+:host-context(body.dark) .theme-toggle:hover .theme-icon {
+  color: var(--accent-500);
+}
+
+/* ------------------------------------------------------ */
+/* RESPONSIVE NAVBAR — MOBILE                             */
+/* ------------------------------------------------------ */
+
+@media (max-width: 800px) {
+  /* NAVBAR HEADER BAR */
+  .navbar {
+    position: relative;
+    z-index: 1000;
+    padding: 0;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+  }
+
+  /* HAMBURGER BUTTON */
+  .nav-hamburger {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1100;
+  }
+
+  /* HAMBURGER ICON */
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 22px;
+    width: 26px;
+    gap: 3px;
+  }
+
+  .hamburger-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: var(--accent-700);
+    border-radius: 2px;
+    transition:
+      transform 0.35s ease,
+      opacity 0.35s ease,
+      background 0.35s ease;
+  }
+
+  /* Dark mode hamburger visibility */
+  :host-context(body.dark) .hamburger-icon span {
+    background: var(--accent-500);
+  }
+
+  /* HAMBURGER → X ANIMATION */
+  .hamburger-icon.open span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+    background: var(--accent-500);
+  }
+
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-icon.open span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+    background: var(--accent-500);
+  }
+
+  /* THEME TOGGLE */
+  .theme-toggle {
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+  }
+
+  /* MOBILE DROPDOWN — LIGHT MODE */
+  .nav-links {
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+
+    background:
+      linear-gradient(rgba(255, 240, 234, 0.98), rgba(255, 230, 220, 0.98)),
+      url("/assets/pale-stone-texture.png");
+    background-size: cover;
+    background-blend-mode: soft-light;
+
+    padding: 2rem 0;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition:
+      opacity 0.35s ease,
+      transform 0.35s ease;
+  }
+
+  /* MOBILE DROPDOWN — DARK MODE */
+  :host-context(body.dark) .nav-links {
+    background:
+      linear-gradient(rgba(24, 6, 0, 0.96), rgba(27, 20, 17, 0.96)),
+      url("/assets/stone-texture.png");
+    background-size: cover;
+    background-blend-mode: overlay;
+
+    border-bottom: 3px solid var(--accent-700);
+    box-shadow:
+      0 4px 12px rgba(0, 0, 0, 0.45),
+      0 8px 24px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(6px);
+  }
+
+  /* DARK MODE VIGNETTE */
+  :host-context(body.dark) .nav-links::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+  }
+
+  /* OPEN STATE */
+  .nav-links.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  /* MOBILE GLYPH SPACING */
+  .nav-links a::before,
+  .nav-links a::after {
+    left: -1rem;
+    right: -1rem;
+  }
+}
