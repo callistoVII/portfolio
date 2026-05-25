@@ -37,13 +37,15 @@ body {
   --accent-300: #974229;
   --accent-100: #ffe3d3;
 
-  /* Mode‑independent signal color */
-  --signal-green: #0be08f;
-
   /* Surfaces */
   --surface-100: #f8f6f2;
   --surface-200: #a18375;
   --surface-300: #452f29;
+
+  /* Mode‑independent signal color */
+  --signal-green: #0be08f;
+  --abort-mission: #eb7155;
+  --back-to-safety: #240303;
 
   /* TEXTURES */
   --pale-stone: url("https://callistoVII.github.io/portfolio/assets/pale-stone-texture.png");
@@ -227,6 +229,8 @@ body.dark {
   --accent-300: #00ff88;
   --accent-100: #8a6a4a;
 
+  /* Mode‑independent signal color */
+  --signal-green: #0be08f;
   --abort-mission: #eb7155;
   --back-to-safety: #240303;
 
