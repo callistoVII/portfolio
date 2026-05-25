@@ -68,7 +68,7 @@
   transform: translateY(-50%);
   width: 260px;
   height: 260px;
-  background-image: url("../../assets/logo-submark-light.svg"); /* adjust path */
+  background-image: url("../../../assets/logo-submark-light.svg"); /* adjust path */
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.08;
@@ -76,7 +76,7 @@
 }
 
 :host-context(.dark) .resume__summary::after {
-  background-image: url("../../assets/logo-submark-dark.svg");
+  background-image: url("../../../assets/logo-submark-dark.svg");
   opacity: 0.12;
   mix-blend-mode: screen;
 }
