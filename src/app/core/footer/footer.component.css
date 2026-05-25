@@ -103,11 +103,6 @@
   color: var(--accent-300);
 }
 
-/* Dark mode glow for divider */
-:host-context(body.dark) .footer-nav li::after {
-  text-shadow: 0 0 6px var(--ember-glow);
-}
-
 /* ------------------------------------------------------ */
 /* COPYRIGHT TEXT                                          */
 /* ------------------------------------------------------ */

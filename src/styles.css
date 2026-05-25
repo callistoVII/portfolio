@@ -45,21 +45,20 @@ body {
   --surface-300: #452f29;
 
   /* Textures */
-  --parchment-texture: url("/assets/parchment-texture.png");
-  --stone-texture: url("/assets/stone-texture.png");
-  --pale-stone-texture: url("/assets/pale-stone-texture.png");
+  --parchment-texture: url("assets/parchment-texture.png");
+  --stone-texture: url("assets/stone-texture.png");
+  --pale-stone-texture: url("assets/pale-stone-texture.png");
 
-/* ------------------------------------------------------ */
-/* GLYPH LEGEND — BRAND SYMBOL SYSTEM                     */
-/* ------------------------------------------------------ */
-/*
+  /* ------------------------------------------------------ */
+  /* GLYPH LEGEND — BRAND SYMBOL SYSTEM                     */
+  /* ------------------------------------------------------ */
+  /*
     🜁  — Dark Mode Toggle + Landing page top accent
     ✶  — Heading Accent (About + Resume)
     ✧  — Heading Accent (alternate)
     ✦  — Divider accent + Carousel inactive indicator
     🜃  — Carousel active indicator + Landing page bottom accent
 */
-
 
   /* Typography */
   --font-display: "IM Fell DW Pica", serif;

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     <section class="error-404">
       <div class="error-wrapper">
         <img
-          src="/assets/error-404.png"
+          src="assets/error-404.png"
           alt=""
           class="error-ghost"
           aria-hidden="true"

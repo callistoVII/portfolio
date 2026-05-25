@@ -32,12 +32,12 @@ import { Component } from '@angular/core';
           <div class="resume__content">
             <div class="resume__group">
               <h3>Languages</h3>
-              <p>TypeScript · JavaScript · HTML · CSS · Python </p>
+              <p>TypeScript · JavaScript · HTML · CSS · Python</p>
             </div>
 
             <div class="resume__group">
               <h3>Frameworks & Runtime</h3>
-              <p>Angular · Node.js · MongoDB (NoSQL) </p>
+              <p>Angular · Node.js · MongoDB (NoSQL)</p>
             </div>
 
             <div class="resume__group">
@@ -141,10 +141,10 @@ import { Component } from '@angular/core';
           <h2>Download</h2>
           <a
             class="resume__download-button"
-            href="/assets/Nicole-Nielsen-Resume.pdf"
+            href="/assets/Nicole-Nielsen-Resume-ghost.pdf"
             download
           >
-            Digital Resume - PDF 
+            Digital Resume - PDF
           </a>
         </div>
       </section>
