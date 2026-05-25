@@ -29,7 +29,7 @@
   border-radius: 25px;
 
   background:
-    linear-gradient(rgba(255, 210, 191, 0.918), rgba(68, 16, 5, 0.884)),
+    linear-gradient(rgba(255, 210, 191, 0.918), rgba(53, 11, 3, 0.884)),
     var(--pale-stone); /* Texture rather than URL */
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,9 +41,12 @@
 }
 
 /* Card text — theme locked */
-.error-card .error-title,
-.error-card .error-text {
+.error-card .error-title {
   color: var(--surface-300);
+}
+
+.error-card .error-text {
+  color: var(--primary-900);
 }
 
 .lost-glyph {
@@ -100,7 +103,7 @@
   text-decoration: none;
 
   background: var(--accent-600);
-  color: var(--surface-50);
+  color: var(--surface-200);
   transition: background 0.3s ease;
 }
 

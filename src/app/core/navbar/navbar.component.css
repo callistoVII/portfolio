@@ -162,7 +162,7 @@
 }
 
 :host-context(body.dark) .theme-toggle:hover .theme-icon {
-  color: var(--accent-500);
+  color: var(--signal-green);
 }
 
 /* ------------------------------------------------------ */
